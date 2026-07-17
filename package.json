@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test:priority": "node \"answers/The intelligent Priority Queue/01-priority-queue.test.ts\""
+    "test:priority": "node \"answers/The intelligent Priority Queue/01-priority-queue.test.ts\"",
+    "test:race-condition": "node \"answers/Code Review - Race Condition/03-race-condition.test.ts\""
   }
 }
