@@ -5,3 +5,4 @@
 ## Answers
 
 1. [Intelligent Priority Queue — TypeScript/ES Modules](<answers/The intelligent Priority Queue/01-priority-queue.md>)
+2. [Complex SQL — Doctor Availability](<answers/Complex SQL - Doctor Availability/02-doctor-availability.md>)
