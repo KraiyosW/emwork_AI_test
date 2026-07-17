@@ -1,0 +1,25 @@
+flowchart LR
+    A["Doctor Prescription UI"] --> B["Medication Service"]
+    B --> C["Drug ID Normalization"]
+    C --> D["Versioned Drug Knowledge Base"]
+    C --> E["Patient Medication / Allergy Context"]
+    D --> F["Deterministic Interaction Rule Engine"]
+    E --> F
+
+    F --> G["Interaction Result + Severity + Evidence"]
+    G --> H["Retrieval Layer"]
+    H --> I["AI Explanation Model"]
+    I --> J["Safety Gate: Schema + Evidence + Confidence"]
+
+    J -->|"Evidence-backed"| K["Display Alert and Sources"]
+    J -->|"Uncertain / Conflict / No Evidence"| L["Show Unable to Verify"]
+    L --> M["Pharmacist Review Queue"]
+    K --> N["Doctor Reviews and Decides"]
+    M --> N
+
+    F -->|"Critical Rule"| O["Hard Stop"]
+    O --> M
+    F -->|"AI unavailable"| K
+
+    N --> P["Approve / Change / Authorized Override"]
+    P --> Q["Immutable Audit Log"]
