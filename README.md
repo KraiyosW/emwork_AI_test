@@ -4,4 +4,4 @@
 
 ## Answers
 
-1. [Intelligent Priority Queue — TypeScript/ES Modules](answers/01-priority-queue.md)
+1. [Intelligent Priority Queue — TypeScript/ES Modules](<answers/The intelligent Priority Queue/01-priority-queue.md>)

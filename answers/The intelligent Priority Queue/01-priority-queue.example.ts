@@ -1,7 +1,7 @@
 import {
   getUrgentPatient,
   type Patient,
-} from './01-priority-queue.js';
+} from './01-priority-queue.ts';
 
 const currentTime = new Date('2026-03-19T11:00:00+07:00');
 
