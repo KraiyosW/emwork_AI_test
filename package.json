@@ -1,0 +1,9 @@
+{
+  "name": "emwork-fullstack-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:priority": "node answers/01-priority-queue.test.ts"
+  }
+}
