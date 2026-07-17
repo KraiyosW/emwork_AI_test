@@ -1,0 +1,97 @@
+{
+  "title": "PatientSymptomExtraction",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "symptoms",
+    "medications_taken"
+  ],
+  "properties": {
+    "symptoms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "description",
+          "duration",
+          "severity"
+        ],
+        "properties": {
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "duration": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "value",
+                  "unit"
+                ],
+                "properties": {
+                  "value": {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "minute",
+                      "hour",
+                      "day",
+                      "week",
+                      "month",
+                      "year"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "severity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "medications_taken": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name_as_reported",
+          "dose",
+          "taken_at"
+        ],
+        "properties": {
+          "name_as_reported": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dose": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "taken_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "symptoms": [
+    {
+      "description": "ปวดท้องบิดๆ",
+      "duration": {
+        "value": 2,
+        "unit": "hour"
+      },
+      "severity": null
+    }
+  ],
+  "medications_taken": [
+    {
+      "name_as_reported": "ยาธาตุน้ำขาว",
+      "dose": null,
+      "taken_at": null
+    }
+  ]
+}
